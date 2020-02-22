@@ -20,7 +20,7 @@ sudo cp -f /etc/apt/sources.list.tsinghua /etc/apt/sources.list
 rm sources.list.tsinghua
 
 sudo apt-get update
-sudo apt-get install -y git vim ssh samba gcc g++
+sudo apt-get install -y git vim ssh samba gcc g++ make
 
 cd ~
 mkdir git_folder && cd git_folder
