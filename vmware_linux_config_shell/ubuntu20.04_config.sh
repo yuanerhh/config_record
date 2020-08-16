@@ -15,7 +15,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted 
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse''' | sudo tee /etc/apt/sources.list
 
 sudo apt-get update
-sudo apt-get install -y git vim ssh samba gcc g++ make net-tools
+sudo apt-get install -y git vim ssh samba gcc g++ make net-tools valgrind
 
 cd ~
 mkdir share
