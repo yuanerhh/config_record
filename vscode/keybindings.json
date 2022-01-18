@@ -1,0 +1,164 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+numpad2",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+numpad1",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && isInDiffLeftEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPreviousInDiffRight",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.key.alt+,",
+        "when": "gitlens:key:,"
+    },
+    {
+        "key": "alt+,",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNext",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/ && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNext",
+        "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/ && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.diffWithNextInDiffLeft",
+        "when": "editorTextFocus && isInDiffLeftEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/ && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "alt+.",
+        "command": "-gitlens.key.alt+.",
+        "when": "gitlens:key:."
+    },
+    {
+        "key": "alt+.",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+i",
+        "command": "cursorUp",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "up",
+        "command": "cursorUp",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+i",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "up",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+  
+      {
+        "key": "alt+k",
+        "command": "cursorDown",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "down",
+        "command": "cursorDown",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+k",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+      },
+  
+      {
+        "key": "alt+l",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "right",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+      },
+  
+      {
+        "key": "alt+j",
+        "command": "cursorLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "left",
+        "command": "cursorLeft",
+        "when": "textInputFocus"
+      },
+  
+      {
+        "key": "alt+o",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "end",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+      },
+  
+      {
+        "key": "alt+u",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "home",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+      }
+]
+
+// alt+i 上
+// alt+k 下
+// alt+j 左
+// alt+l 右
+// alt+u 行首
+// alt+o 行末
